@@ -1,7 +1,10 @@
 # CPU-only-Torch-Kokoro-Fix-for-Odysseus-TTS-Mode-on-Docker
 
 Odysseus Recommends Docker. 
-https://github.com/pewdiepie-archdaemon/odysseus/discussions/3691 How to install Odysseus with Docker Desktop on Windows and Workaround issues with GPU Visibility by USING lmstudio(windows) and patching the TTS implementation with a cpu-only "torch" version of tts_service.py. https://github.com/pewdiepie-archdaemon/odysseus/discussions/3691
+
+https://github.com/pewdiepie-archdaemon/odysseus/discussions/3691 
+How to install Odysseus with Docker Desktop on Windows and Workaround issues with GPU Visibility by USING lmstudio(windows) and patching the TTS implementation with a cpu-only "torch" version of tts_service.py. 
+https://github.com/pewdiepie-archdaemon/odysseus/discussions/3691
 
 This fix removes the mentions of a CUDA accessible device in the torch implementation of the tts_service and provides users with a guide to install dependencies needed to workaround the CUDA first style of implementation in kokoro. 
 
