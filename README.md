@@ -41,7 +41,7 @@ Here are the steps to achieve container-side text-to-speech on docker desktop wi
   	"tts_voice": "af_heart",
   	"tts_speed": "1",
 
-Troubleshooting* :
+*Troubleshooting* :
 
 Once you followed the steps above, even for linux,
 
@@ -54,10 +54,10 @@ Once you followed the steps above, even for linux,
 
 22 Restart the container and toggle tts mode on in the browser.
 
-IF DONE IN THAT ORDER IT SHOULD NOW BE WORKING** 
+**IF DONE IN THAT ORDER IT SHOULD NOW BE WORKING** 
 	Ask a model something so its response triggers the tts service.
 
 
-*It should be working after 2 restarts on its own if you try to use it with normally.*
+*It should be working after 2 restarts on its own if you try to use it normally.*
 
 **The whole thing about restarting the container is very important because it update the environment with the correct variables so the next install can call the right variables when it installs. failure to follow the restarting schedule will lead to corrupted installation. That is when you want to delete the whole thing and start fresh from the git clone https://github.com/pewdiepie-archdaemon/odysseus.git step**
