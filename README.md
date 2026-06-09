@@ -60,7 +60,11 @@ Once you followed the steps above, even for linux,
 
 *It should be working after 2 restarts on its own if you try to use it normally.*
 
-**Restarting the odysseus-1 container is very important to update the environment and app with the correct information so the next step in the installation can call the right foundation when installing kokoro. failure to follow the restarting schedule can lead to corrupted installation. If you have tried everything and it is not working:
+** 	Restarting the odysseus-1 container is very important to update the environment and app with the correct information so the next step in the installation can call the right foundation when installing kokoro. Failure to follow the restarting schedule can lead to a corrupted installation. 
+
+
+
+If you have tried everything and it is not working:
 
 Delete the whole thing(containers, images, builds, volumes and the "odysseus" folder)
 
