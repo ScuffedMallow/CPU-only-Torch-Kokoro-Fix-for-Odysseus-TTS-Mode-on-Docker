@@ -76,3 +76,15 @@ If you have tried everything and it is not working:
 Delete the whole thing(containers, images, builds, volumes and the "odysseus" folder)
 
 Start fresh from step 4 [git clone https://github.com/pewdiepie-archdaemon/odysseus.git] **
+
+
+Message from this vdmkenny on github
+           ** I made a tutorial on how to workaround gpu visibilty issues(for docker installs with CPU-TTS) and using amd gpus with kv cache quantization from windows for LLM serving #3691
+
+        I just got a couple of notifications of you posting this on a number of different issues identically, please don't spam.
+
+    im just trying to raise awareness for a workaround. its a common issue. the fix for common folks so its easier to find the fix while team pewds runs down the Pull Requests
+
+Awareness is different from looking up every GPU related issue and spamming the same comment. Be warned.
+It creates more noise for me (part of team Pewds). **
+Thats the issue the patch is for! I am just trying to help people with limited compute/compatibility issues (raspberry and normal computers without 5090s) run this odysseus without special knowledge with tts enabled on CPU with a docker installation.
