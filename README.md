@@ -64,4 +64,4 @@ Once you followed the steps above, even for linux,
 
 Delete the whole thing(containers, images, builds, volumes and the "odysseus" folder)
 
-Start fresh from step 4 [git clone https://github.com/pewdiepie-archdaemon/odysseus.git]**
+Start fresh from step 4 [git clone https://github.com/pewdiepie-archdaemon/odysseus.git] **
