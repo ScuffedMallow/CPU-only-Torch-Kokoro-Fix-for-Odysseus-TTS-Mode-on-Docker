@@ -41,12 +41,16 @@ Here are the steps to achieve container-side text-to-speech on docker desktop wi
 15 open the "exec" terminal and paste [pip install kokoro soundfile]
 16 restart the container
 
-17 navigate to /Users/$USER/odysseus/data/ and open the settings.json with a text editor and change the values to 
+17 navigate to /Users/$USER/odysseus/src/ and open the settings.py with a text editor and change the values to 
 	"tts_enabled": true,
   	"tts_provider": "local",
   	"tts_model": "kokoro",
   	"tts_voice": "af_heart",
-  	"tts_speed": "1",
+  	"tts_speed": "1"
+	"stt_enabled": True,
+    "stt_provider": "local",
+    "stt_model": "base",
+    "stt_language": "en",
 
 *Troubleshooting* :
 
