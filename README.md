@@ -90,20 +90,25 @@ Delete the whole thing(containers, images, builds, volumes and the "odysseus" fo
 
 Start fresh from step 4 [git clone https://github.com/pewdiepie-archdaemon/odysseus.git] **
 
+After installing torch and kokoro with pip on the Odysseus-1 container of the stack in the "exec" tab
 
 <img width="3421" height="603" alt="Screenshot 2026-06-10 030448" src="https://github.com/user-attachments/assets/d72ec39a-fa00-4c1e-8cec-fc8ac1a65373" />
 <img width="3426" height="688" alt="Screenshot 2026-06-10 030552" src="https://github.com/user-attachments/assets/5508853b-0448-4f05-96e4-94e7dc46a9ae" />
-After installing torch and kokoro with pip on the Odysseus-1 container of the stack in the "exec" tab
 
 MANUALLY CHECK THE settings VALUES AT 2 different "/app/src/settings.py" and "/app/data/settings.json" locations FILES IN THE DOCKER FILE SYSTEM
+
 <img width="3098" height="1250" alt="Screenshot 2026-06-10 024546" src="https://github.com/user-attachments/assets/91a8af2a-6323-4f77-accb-4701fe056071" />
 <img width="3126" height="1365" alt="Screenshot 2026-06-10 024903" src="https://github.com/user-attachments/assets/53614838-bcff-4e46-9bc4-ea70cb7c1243" />
+
+
+
 and make sure the tts_service content matches the content of tts_service.DOCKERPREBUILD.py
+
 <img width="3112" height="1361" alt="Screenshot 2026-06-10 025425" src="https://github.com/user-attachments/assets/9a9db3d9-3a81-4e1b-b78d-28c35250272c" />
 If you find the values to not be correct, you can try to set them manually by editing the files in the docker file system or using nano in native linux.
 <img width="3412" height="907" alt="Screenshot 2026-06-10 031136" src="https://github.com/user-attachments/assets/44c8b4bf-b58e-43b7-873e-adfc6ee0701a" />
 
-This patch is for pi/computers without access to a gpu (for CUDA compatible availability with CUDA or ROCM needed for original tts_service)
-Running LLMs on a different server than the internal cookbook llama.cpp provided with Odysseus. (lmstudio on the localhost or a different machine entirely)
+This patch is to run tts on pi/computers/containers without internal access to a gpu (CUDA compatible availability with CUDA or ROCM needed for the unpatched tts_service)
+You have to run LLMs on a different server than the internal cookbook llama.cpp provided with Odysseus. (lmstudio on the localhost or a different machine entirely)
 You need at least 8gb RAM to host the agent stack with CPU-torch for kokoro and STT with faster-whisper "small" model.
 
