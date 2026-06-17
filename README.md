@@ -24,9 +24,13 @@ Here are the steps to achieve container-side text-to-speech on docker desktop wi
 3 install docker desktop
 
 4 open powershell(windows) admin mode
+
 5 [cd /Users/$USER] to make the installation accessible
+
 6 [git clone https://github.com/pewdiepie-archdaemon/odysseus.git]
+
 7 [cd odysseus]
+
 8 [cp .env.example .env]
 
 9 Put the "services" folder into your odysseus folder, then navigate to "/Users/$USER/services/tts/"  to find "tts_service.py" delete it and replace it by renaming tts_service.DOCKERPREBUILD.py to tts_service.py.
